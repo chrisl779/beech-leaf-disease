@@ -24,23 +24,25 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(1240, 720);
   
   input = createFileInput(handleImage); //create the file chooser, calls "handleImage" on it
-  input.position(50, 480); //puts it here
+  input.position(10, 480); //puts it here
 }
 
 function draw() {
-  background(200); // fill background with rgb color (200,200,200)
+  background(80, 200, 130); // fill background with rgb color (200,200,200)
+
+  
   
   fill(50); // set color with rgb color (50, 50, 50)
-  rect(50, 50, 400, 400); //  draw rectangle ( x, y, width, height)
+  rect(5, 50, 400, 400); //  draw rectangle ( x, y, width, height)
   showResult();
 }
 
 function showResult() {
   if (img != null) {
-    image(img, 50, 50, 400, 400); //image() is a function, img is the variable
+    image(img, 10, 50, 400, 400); //image() is a function, img is the variable
     }
   
   if (label != null && confidence != null) {
@@ -50,11 +52,11 @@ function showResult() {
     strokeWeight(5);
     textSize(20);
     
-    text( label, 50, 535); // !!!
+    text( label, 10, 535); // !!!
     
     fill(0);
     noStroke();
-    text("Confidence: " + confidence, 50, 565);
+    text("Confidence: " + confidence, 10, 565);
   }
 }
 

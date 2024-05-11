@@ -10825,6 +10825,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: url("https://png.pngtree.com/thumb_back/fw800/background/20231020/pngtree-soothing-background-in-a-shade-of-green-with-a-smooth-textured-image_13659600.png") no-repeat center center fixed;
+  /*background: url("https://images.photowall.com/products/60879/green-beech-forest-1.jpg") no-repeat center center fixed; */
+  background-color: #50c882; 
   background-size: cover;
 }
