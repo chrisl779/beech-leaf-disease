@@ -36,7 +36,7 @@ function draw() {
   
   
   fill(50); // set color with rgb color (50, 50, 50)
-  rect(5, 50, 400, 400); //  draw rectangle ( x, y, width, height)
+  rect(10, 50, 400, 400); //  draw rectangle ( x, y, width, height)
   showResult();
 }
 
